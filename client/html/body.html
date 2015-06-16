@@ -1,0 +1,51 @@
+<head>
+	<meta name="google-site-verification" content="Z8gM9wvX595cXQJwFUO8mfSERgyK9VjDfUWnutKyboQ" />
+  <title>Subtitles editor</title>
+  <link href="../styles/singin/signin.css" rel="stylesheet">
+  <link href='../styles/bootstrap/bootstrap.min.css', rel='stylesheet'>
+</head>
+
+<body> 
+    {{> body}}
+  </div>
+</body>
+<template name='body'>
+  <div id='content'>
+    
+
+
+    {{#if home}}
+      <div class='home'>
+         {{> home}}
+      </div>
+    {{/if}}
+
+    {{#if app}}
+      <div class='app'>
+        {{> application}}
+      </div>
+    {{/if}}
+
+    {{#if gallery}}
+      <div class='gallery'>
+        {{> gallery}}
+      </div>
+    {{/if}}
+
+    {{#if autherror}}
+      <div class='autherror'>
+        {{> autherror}}
+      </div>
+    {{/if}}
+
+
+    
+  </div>
+</template>
+
+
+
+
+
+
+
